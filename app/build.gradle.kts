@@ -79,7 +79,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     androidTestImplementation(libs.androidx.test.runner)
+
     implementation(libs.dagger)
     ksp(libs.dagger.compiler)
+
     implementation(libs.timber)
 }
