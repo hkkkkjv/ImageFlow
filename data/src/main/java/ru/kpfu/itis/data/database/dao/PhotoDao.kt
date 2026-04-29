@@ -10,6 +10,12 @@ import ru.kpfu.itis.data.database.entity.PhotoEntity
 
 @Dao
 interface PhotoDao {
+    @Query("SELECT COUNT(*) > 0 FROM photos")
+    suspend fun hasCache(): Boolean
+
+    @Query("SELECT * FROM photos")
+    suspend fun getCachedPhotos(): List<PhotoEntity>
+
     @Query("SELECT * FROM photos ORDER BY liked DESC, downloadedAt DESC")
     fun observeAll(): Flow<List<PhotoEntity>>
 

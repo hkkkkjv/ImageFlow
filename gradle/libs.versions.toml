@@ -28,6 +28,8 @@ kotlinx-serialization-json = "1.9.0"
 okhttp = "4.12.0"
 
 androidx-room = "2.8.4"
+datastore = "1.2.1"
+inject="1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -56,7 +58,6 @@ material = { group = "com.google.android.material", name = "material", version.r
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-kotlinx-serialization = { group = "com.squareup.retrofit2", name = "converter-kotlinx-serialization", version.ref = "retrofit" }
 
-kotlin-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "kotlin-serialization" }
 kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
 
@@ -66,6 +67,9 @@ okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor",
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "androidx-room" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "androidx-room" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "androidx-room" }
+
+datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+inject = { group = "javax.inject", name= "javax.inject",  version.ref = "inject" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
