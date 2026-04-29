@@ -3,6 +3,7 @@ package ru.kpfu.itis.domain.repository
 import kotlinx.coroutines.flow.Flow
 import ru.kpfu.itis.domain.model.Photo
 import ru.kpfu.itis.domain.model.PhotoId
+import ru.kpfu.itis.domain.common.Result
 
 interface PhotoRepository {
     suspend fun searchPhotos(query: String, page: Int = 1): Result<List<Photo>>
